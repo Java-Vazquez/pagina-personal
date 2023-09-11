@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pagina-personal/static/css/main.68197689.css",
-    "main.js": "/pagina-personal/static/js/main.1e899519.js",
+    "main.css": "/pagina-personal/static/css/main.5140b063.css",
+    "main.js": "/pagina-personal/static/js/main.d0467afd.js",
     "static/media/gilgamesh.png": "/pagina-personal/static/media/gilgamesh.14352c9678a961effd06.png",
     "static/media/hadoop.png": "/pagina-personal/static/media/hadoop.bbc0c73d9a85fc5ce037.png",
     "static/media/fondo.jpg": "/pagina-personal/static/media/fondo.649ebf917dc2f776b99f.jpg",
@@ -19,11 +19,11 @@
     "static/media/C++.png": "/pagina-personal/static/media/C++.1240ce157b70fb399c6c.png",
     "static/media/logo.png": "/pagina-personal/static/media/logo.9adfd372cef4a6934912.png",
     "index.html": "/pagina-personal/index.html",
-    "main.68197689.css.map": "/pagina-personal/static/css/main.68197689.css.map",
-    "main.1e899519.js.map": "/pagina-personal/static/js/main.1e899519.js.map"
+    "main.5140b063.css.map": "/pagina-personal/static/css/main.5140b063.css.map",
+    "main.d0467afd.js.map": "/pagina-personal/static/js/main.d0467afd.js.map"
   },
   "entrypoints": [
-    "static/css/main.68197689.css",
-    "static/js/main.1e899519.js"
+    "static/css/main.5140b063.css",
+    "static/js/main.d0467afd.js"
   ]
 }
