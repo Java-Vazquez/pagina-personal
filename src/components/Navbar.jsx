@@ -19,7 +19,7 @@ function Navbar() {
     }
     window.addEventListener('scroll', changeColor)
 
-    const emailAddress = '0506j0810@gmail.com'
+    const emailAddress = 'vazquezgurrolajavier@gmail.com'
     
     const handleEmailClick = () => {window.location.href = `mailto:${emailAddress}`}
 
@@ -115,7 +115,7 @@ function Navbar() {
                 </li>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
                     <a className='flex justify-between items-center w-full text-[#F8FBFF]'
-                    href='./CV_Javier_Vazquez.pdf' download>
+                    href='./Javier_VazquezCV' download>
                         Resume <BsFillPersonLinesFill size={30} />
                     </a>
                 </li>

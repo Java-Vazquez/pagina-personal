@@ -37,7 +37,7 @@ function Contact() {
     } else {
       // Si no hay errores, envía el formulario a Getform.io
       try {
-        const response = await fetch('https://getform.io/f/5223ea72-52d6-4733-ae1b-eecb152d1b20', {
+        const response = await fetch('https://getform.io/f/aeae574a-9610-4065-93cf-69f937d1d9dc', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
