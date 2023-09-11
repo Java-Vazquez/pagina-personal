@@ -10,12 +10,12 @@ import hadoop from '../assets/hadoop.png'
 
 function Skills() {
   return (
-    <div name='skills' className='w-full sm:h-screen bg-[#1C1C1D] text-[#F8FBFF]'>
+    <div name='skills' className='w-full h-screen bg-[#1C1C1D] text-[#F8FBFF]'>
       {/* Container */}
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
         <div>
-          <p className='text-4xl font-bold inline border-b-4 border-[#49AF73]'>Skills:</p>
-          <p className='py-4 sm:text-xl'>This are some of the technologies I've worked with</p>
+          <p className='text-4xl font-bold inline border-b-4 border-[#49AF73]'>Skills</p>
+          <p className='py-4 sm:text-xl'>These are some of the technologies I've worked with</p>
         </div>
 
         {/*Icons container */}

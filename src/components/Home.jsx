@@ -13,13 +13,13 @@ export const Home = () => {
       {/* Container */}
       <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
         <p className='text-3xl text-[#49AF73]'>
-          Hi, mi name is
+          Hi, my name is
         </p>
           <h1 className='pb-4 text-[#F8FBFF] typewritter-content'>
             {text}
           </h1>
           <h2 className='pb-4 text-3xl sm:text-7xl text-[#49AF73]'>
-            <p className='text-2xl'>And I'm am:</p>
+            <p className='text-2xl'>And I'm:</p>
           </h2>
           <h2 className='pb-4 text-[#F8FBFF] typewritter-content'>
             {text2}
