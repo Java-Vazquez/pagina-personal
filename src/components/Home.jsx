@@ -1,7 +1,6 @@
 import React from 'react'
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import {Link} from 'react-scroll'
-import TypeWriter from 'react-typewriter-effect'
 import fondo from '../assets/fondo.jpg'
 import { useTypingEffect } from '../hooks/typing-effects';
 

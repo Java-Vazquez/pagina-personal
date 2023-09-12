@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { HiOutlineMail } from 'react-icons/hi';
+import React, { useState, useEffect } from 'react';
+import { FaSpinner } from 'react-icons/fa';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -9,12 +9,13 @@ function Contact() {
   });
 
   const [formError, setFormError] = useState({});
-  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [confirmationVisible, setConfirmationVisible] = useState(false);
+  const [buttonColor, setButtonColor] = useState(''); // Nuevo estado para controlar el color del botón
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Previene la recarga de la página por defecto
+    e.preventDefault();
 
-    // Realiza la validación
     const errors = {};
 
     if (!formData.name.trim()) {
@@ -31,11 +32,12 @@ function Contact() {
       errors.message = 'Please enter your message';
     }
 
-    // Si hay errores, muestra los mensajes de error
     if (Object.keys(errors).length > 0) {
       setFormError(errors);
     } else {
-      // Si no hay errores, envía el formulario a Getform.io
+      setIsLoading(true);
+      setButtonColor('#49AF73'); // Cambiar el color del botón cuando se muestra el icono de carga
+
       try {
         const response = await fetch('https://getform.io/f/aeae574a-9610-4065-93cf-69f937d1d9dc', {
           method: 'POST',
@@ -46,25 +48,36 @@ function Contact() {
         });
 
         if (response.ok) {
-          // El formulario se envió correctamente
-          setFormSubmitted(true);
-
-          // Reinicia los valores del formulario y los errores
           setFormData({
             name: '',
             email: '',
             message: '',
           });
           setFormError({});
+          setConfirmationVisible(true);
         } else {
-          // Manejar errores de envío aquí
           console.error('Error al enviar el formulario');
         }
       } catch (error) {
         console.error('Error al enviar el formulario:', error);
+      } finally {
+        setIsLoading(false);
+        setButtonColor(''); // Devolver el color del botón a su estado original
       }
     }
   };
+
+  useEffect(() => {
+    if (confirmationVisible) {
+      const timer = setTimeout(() => {
+        setConfirmationVisible(false);
+      }, 5000);
+
+      return () => {
+        clearTimeout(timer);
+      };
+    }
+  }, [confirmationVisible]);
 
   return (
     <div name="contact" className="w-full h-screen bg-[#1C1C1D] flex justify-center items-center p-4">
@@ -103,10 +116,14 @@ function Contact() {
         <button
           type="submit"
           className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center rounded-lg"
-          disabled={formSubmitted}
+          disabled={isLoading}
+          style={{ backgroundColor: buttonColor }} // Establecer el color del botón dinámicamente
         >
-          {formSubmitted ? 'Form Submitted' : "Let's Collaborate"}
+          {isLoading ? <FaSpinner className="animate-spin" /> : "Let's Collaborate"}
         </button>
+        {confirmationVisible && (
+          <p className="text-green-500">Form submitted successfully! Message will disappear in 5 seconds.</p>
+        )}
       </form>
     </div>
   );

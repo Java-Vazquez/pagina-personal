@@ -11,7 +11,7 @@ function Work() {
     <div name='work' className='w-full lg:h-screen text-[#F8FBFF] bg-[#1C1C1D]'>
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
         <div className='pb-8'>
-          <p className='text-4xl font-bold inline border-b-4 text-[#F8FBFF] border-[#49AF73]'>
+          <p className='text-4xl font-bold inline border-b-4 text-[#F8FBFF] border-green-500'>
                     My work
                 </p>
                 <p className='py-6 sm:text-xl'>Check out some of my most relevant projects</p>
@@ -34,7 +34,7 @@ function Work() {
                                     Demo
                                 </button>
                             </a>
-                            <a href="">
+                            <a href="https://github.com/Java-Vazquez/Proyecto_wazuh">
                                 <button className='text-center rounded-lg  bg-[#F8FBFF] text-gray-700 font-bold button-div hover:bg-[#1C1C1D] hover:text-[#F8FBFF]'>
                                     Code
                                 </button>
@@ -57,7 +57,7 @@ function Work() {
                                     Demo
                                 </button>
                             </a>
-                            <a href="">
+                            <a href="https://github.com/Java-Vazquez/alerta-de-contagio">
                                 <button className='text-center rounded-lg  bg-[#F8FBFF] text-gray-700 font-bold button-div hover:bg-[#1C1C1D] hover:text-[#F8FBFF]'>
                                     Code
                                 </button>
@@ -98,7 +98,7 @@ function Work() {
                                     Demo
                                 </button>
                             </a>
-                            <a href="">
+                            <a href="https://github.com/Java-Vazquez/ocho_reinas">
                                 <button className='text-center rounded-lg bg-[#F8FBFF] text-gray-700 font-bold button-div hover:bg-[#1C1C1D] hover:text-[#F8FBFF]'>
                                     Code
                                 </button>
@@ -121,7 +121,7 @@ function Work() {
                                     Demo
                                 </button>
                             </a>
-                            <a href="">
+                            <a href="https://github.com/Java-Vazquez/B-squedas_Informadas">
                                 <button className='text-center rounded-lg  bg-[#F8FBFF] text-gray-700 font-bold button-div hover:bg-[#1C1C1D] hover:text-[#F8FBFF]'>
                                     Code
                                 </button>
@@ -144,7 +144,7 @@ function Work() {
                                     Demo
                                 </button>
                             </a>
-                            <a href="">
+                            <a href="https://github.com/Java-Vazquez/Calculadora_distribuida">
                                 <button className='text-center rounded-lg bg-[#F8FBFF] text-gray-700 font-bold button-div hover:bg-[#1C1C1D] hover:text-[#F8FBFF]'>
                                     Code
                                 </button>
