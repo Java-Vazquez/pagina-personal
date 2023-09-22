@@ -84,10 +84,10 @@ function Contact() {
       <form onSubmit={handleSubmit} className="flex flex-col max-w-[600px] w-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-[#49AF73] text-[#F8FBFF]">Contact</p>
-          <p className="sm:text-xl text-[#F8FBFF] py-4">Submit the form below or shoot me an email by clicking the mail icon on the left menu </p>
+          <p className="sm:text-xl text-[#F8FBFF] py-4">Submit the form below or shoot me an email by clicking on Email button </p>
         </div>
         <input
-          className="bg-white p-2 rounded-lg"
+          className="bg-gray-500 text-[#F8FBFF] p-2 rounded-lg"
           type="text"
           placeholder="Name"
           name="name"
@@ -96,7 +96,7 @@ function Contact() {
         />
         {formError.name && <p className="text-red-500">{formError.name}</p>}
         <input
-          className="my-4 p-2 bg-white rounded-lg"
+          className="my-4 p-2 bg-gray-500 text-[#F8FBFF] rounded-lg"
           type="email"
           placeholder="Email"
           name="email"
@@ -105,7 +105,7 @@ function Contact() {
         />
         {formError.email && <p className="text-red-500">{formError.email}</p>}
         <textarea
-          className="bg-white p-2 rounded-lg"
+          className="bg-gray-500 text-[#F8FBFF] p-2 rounded-lg"
           name="message"
           rows="10"
           placeholder="Message"

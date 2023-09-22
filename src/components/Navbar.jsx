@@ -11,7 +11,7 @@ function Navbar() {
 
     const[color, setColor] = useState(false)
     const changeColor = () => {
-        if(window.scrollY >= 200) {
+        if(window.scrollY >= 90) {
             setColor(true)
         } else {
             setColor(false)
@@ -32,27 +32,27 @@ function Navbar() {
 
         {/*Navbar menu*/}
         <ul className='hidden md:flex'>
-            <li className= 'hover:bg-pink-600 hover:border-pink-600'>
+            <li className= 'hover:text-pink-600 hover:border-pink-600'>
                 <Link activeClass="active" to="home" smooth={true} duration={500}>
                     Home
                 </Link>
             </li>
-            <li className= 'hover:bg-pink-600 hover:border-pink-600'> 
+            <li className= 'hover:text-pink-600 hover:border-pink-600'> 
                 <Link activeClass="active" to="about" smooth={true} duration={500}>
                     About
                 </Link>
             </li>
-            <li className= 'hover:bg-pink-600 hover:border-pink-600'>
+            <li className= 'hover:text-pink-600 hover:border-pink-600'>
                 <Link activeClass="active" to="skills" smooth={true} duration={500}>
                     Skills
                 </Link>
             </li>
-            <li className= 'hover:bg-pink-600 hover:border-pink-600'>
+            <li className= 'hover:text-pink-600 hover:border-pink-600'>
                 <Link activeClass="active" to="work" smooth={true} duration={500}>
                     Work
                 </Link>
             </li>
-            <li className= 'hover:bg-pink-600 hover:border-pink-600'>
+            <li className= 'hover:text-pink-600 hover:border-pink-600'>
                 <Link activeClass="active" to="contact" smooth={true} duration={500}>
                     Contact
                 </Link>
@@ -98,13 +98,13 @@ function Navbar() {
             <ul>
                 <li className= 'w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
                     <a className= 'flex justify-between items-center w-full text-[#F8FBFF]'
-                    href="https://www.linkedin.com/in/javier-v%C3%A1zquez-gurrola-01615b241/">
+                    href="https://www.linkedin.com/in/javier-v%C3%A1zquez-gurrola-01615b241/" target="_blank">
                         Linkedin <FaLinkedin size={30} />
                     </a>
                 </li>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
                     <a className='flex justify-between items-center w-full text-[#F8FBFF]'
-                    href='https://github.com/Java-Vazquez'>
+                    href='https://github.com/Java-Vazquez' target="_blank">
                         Github <FaGithub size={30} />
                     </a>
                 </li>

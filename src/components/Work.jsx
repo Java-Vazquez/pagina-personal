@@ -29,12 +29,12 @@ function Work() {
                             Wazuh GUI: Connected to Wazuh's API, allowing users to perform actions related to agent and vulnerability management in a complete and friendly manner.                        
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="">
+                            <a href="" target="_blank">
                                 <button className='text-center rounded-lg  bg-[#F8FBFF] text-gray-700 font-bold button-div hover:bg-[#1C1C1D] hover:text-[#F8FBFF]'>
                                     Demo
                                 </button>
                             </a>
-                            <a href="https://github.com/Java-Vazquez/Proyecto_wazuh">
+                            <a href="https://github.com/Java-Vazquez/Proyecto_wazuh" target="_blank">
                                 <button className='text-center rounded-lg  bg-[#F8FBFF] text-gray-700 font-bold button-div hover:bg-[#1C1C1D] hover:text-[#F8FBFF]'>
                                     Code
                                 </button>
@@ -52,12 +52,12 @@ function Work() {
                         COVID-19 Contagion Risk Alarm: A functional air CO2 particle monitor that alerts the user when ventilation in the room is required.                        
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="">
+                            <a href="" target="_blank">
                                 <button className='text-center rounded-lg  bg-[#F8FBFF] text-gray-700 font-bold button-div hover:bg-[#1C1C1D] hover:text-[#F8FBFF]'>
                                     Demo
                                 </button>
                             </a>
-                            <a href="https://github.com/Java-Vazquez/alerta-de-contagio">
+                            <a href="https://github.com/Java-Vazquez/alerta-de-contagio" target="_blank">
                                 <button className='text-center rounded-lg  bg-[#F8FBFF] text-gray-700 font-bold button-div hover:bg-[#1C1C1D] hover:text-[#F8FBFF]'>
                                     Code
                                 </button>
@@ -75,7 +75,7 @@ function Work() {
                         Gilgamesh Data Systems website: Business website that aims to provide visibility to Gilgamesh in the digital world, addressing needs described by the company.
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="https://pruebas-g.web.app">
+                            <a href="https://pruebas-g.web.app" target="_blank">
                                 <button className='text-center rounded-lg  bg-[#F8FBFF] text-gray-700 font-bold button-div hover:bg-[#1C1C1D] hover:text-[#F8FBFF]'>
                                     Visit
                                 </button>
@@ -93,12 +93,12 @@ function Work() {
                         Eight Queens Problem: Implementing the A* algorithm, I aim to find a correct solution to the Eight Queens problem using Artificial Intelligence.
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="">
+                            <a href="" target="_blank">
                                 <button className='text-center rounded-lg  bg-[#F8FBFF] text-gray-700 font-bold button-div hover:bg-[#1C1C1D] hover:text-[#F8FBFF]'>
                                     Demo
                                 </button>
                             </a>
-                            <a href="https://github.com/Java-Vazquez/ocho_reinas">
+                            <a href="https://github.com/Java-Vazquez/ocho_reinas" target="_blank">
                                 <button className='text-center rounded-lg bg-[#F8FBFF] text-gray-700 font-bold button-div hover:bg-[#1C1C1D] hover:text-[#F8FBFF]'>
                                     Code
                                 </button>
@@ -116,12 +116,12 @@ function Work() {
                         Informed Search algorithms implementation: Using a cities graph, I implement several AI algorithms looking for the most efficient and best answer.
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="">
+                            <a href="" target="_blank">
                                 <button className='text-center rounded-lg  bg-[#F8FBFF] text-gray-700 font-bold button-div hover:bg-[#1C1C1D] hover:text-[#F8FBFF]'>
                                     Demo
                                 </button>
                             </a>
-                            <a href="https://github.com/Java-Vazquez/B-squedas_Informadas">
+                            <a href="https://github.com/Java-Vazquez/B-squedas_Informadas" target="_blank">
                                 <button className='text-center rounded-lg  bg-[#F8FBFF] text-gray-700 font-bold button-div hover:bg-[#1C1C1D] hover:text-[#F8FBFF]'>
                                     Code
                                 </button>
@@ -139,12 +139,12 @@ function Work() {
                         Autonomous Descentralized Service-Oriented Architecture Calculator: modules operate independently, comunicate, and ensure functionality during failures
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="">
+                            <a href="" target="_blank">
                                 <button className='text-center rounded-lg bg-[#F8FBFF] text-gray-700 font-bold button-div hover:bg-[#1C1C1D] hover:text-[#F8FBFF]'>
                                     Demo
                                 </button>
                             </a>
-                            <a href="https://github.com/Java-Vazquez/Calculadora_distribuida">
+                            <a href="https://github.com/Java-Vazquez/Calculadora_distribuida" target="_blank">
                                 <button className='text-center rounded-lg bg-[#F8FBFF] text-gray-700 font-bold button-div hover:bg-[#1C1C1D] hover:text-[#F8FBFF]'>
                                     Code
                                 </button>
