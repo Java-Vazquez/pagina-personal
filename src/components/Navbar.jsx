@@ -37,9 +37,14 @@ function Navbar() {
                     Home
                 </Link>
             </li>
-            <li className= 'hover:text-pink-600 hover:border-pink-600'> 
+            <li className= 'hover:text-pink-600 hover:border-pink-600'>
                 <Link activeClass="active" to="about" smooth={true} duration={500}>
                     About
+                </Link>
+            </li>
+            <li className= 'hover:text-pink-600 hover:border-pink-600'>
+                <Link activeClass="active" to="experience" smooth={true} duration={500}>
+                    Experience
                 </Link>
             </li>
             <li className= 'hover:text-pink-600 hover:border-pink-600'>
@@ -74,6 +79,11 @@ function Navbar() {
             <li className='py-6 text-4xl hover:text-pink-600'>
                 <Link onClick={handleClick} activeClass="active" to="about" smooth={true} duration={500}>
                     About
+                </Link>
+            </li>
+            <li className='py-6 text-4xl hover:text-pink-600'>
+                <Link onClick={handleClick} activeClass="active" to="experience" smooth={true} duration={500}>
+                    Experience
                 </Link>
             </li>
             <li className='py-6 text-4xl hover:text-pink-600'>
