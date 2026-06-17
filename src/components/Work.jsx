@@ -108,7 +108,7 @@ function Work() {
   const [archiveOpen, setArchiveOpen] = useState(false)
 
   return (
-    <div name='work' className='w-full py-20 text-[#F8FBFF] bg-[#1C1C1D]'>
+    <section name='work' aria-label="Projects" className='w-full py-20 text-[#F8FBFF] bg-[#1C1C1D]'>
       <div className='max-w-[1000px] mx-auto px-4'>
 
         {/* Featured */}
@@ -169,7 +169,7 @@ function Work() {
         </div>
 
       </div>
-    </div>
+    </section>
   )
 }
 

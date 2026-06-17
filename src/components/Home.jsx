@@ -8,7 +8,7 @@ export const Home = () => {
   const text = useTypingEffect("Javier Vázquez G.", 80)
   const text2 = useTypingEffect("Global IT Engineer | Automation, Identity & AI", 60)
   return (
-    <div name='home' className='w-full h-screen bg-[#0a192f] bg-no-repeat bg-cover relative' style={{backgroundImage: `url(${fondo})`}}>
+    <header name='home' aria-label="Hero section" className='w-full h-screen bg-[#0a192f] bg-no-repeat bg-cover relative' style={{backgroundImage: `url(${fondo})`}}>
       {/* Overlay for better text readability */}
       <div className='absolute inset-0 bg-[#0a192f] opacity-60'></div>
       {/* Container */}
@@ -44,6 +44,6 @@ export const Home = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </header>
   )
 }

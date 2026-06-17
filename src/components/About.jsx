@@ -21,7 +21,7 @@ const About = () => {
   ]
 
   return (
-    <div name='about' className='w-full py-20 bg-[#0a192f] text-[#F8FBFF]'>
+    <section name='about' aria-label="About me" className='w-full py-20 bg-[#0a192f] text-[#F8FBFF]'>
       <div className='max-w-[1000px] mx-auto px-4'>
         {/* Header */}
         <div className='mb-12'>
@@ -66,7 +66,7 @@ const About = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -132,7 +132,7 @@ function ExperienceCard({ exp, isLast }) {
 
 function Experience() {
   return (
-    <div name='experience' className='w-full py-20 bg-[#0a192f] text-[#F8FBFF]'>
+    <section name='experience' aria-label="Work experience" className='w-full py-20 bg-[#0a192f] text-[#F8FBFF]'>
       <div className='max-w-[1000px] mx-auto px-4'>
         <div className='mb-12'>
           <p className='text-4xl font-bold inline border-b-4 border-[#49AF73]'>Experience</p>
@@ -145,7 +145,7 @@ function Experience() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

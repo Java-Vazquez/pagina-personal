@@ -11,12 +11,14 @@ function App() {
   return (
     <div className="bg-[#0a192f]">
       <Navbar/>
-      <Home/>
-      <About/>
-      <Experience/>
-      <Skills/>
-      <Work/>
-      <Contact/>
+      <main id="main-content">
+        <Home/>
+        <About/>
+        <Experience/>
+        <Skills/>
+        <Work/>
+        <Contact/>
+      </main>
       <Footer/>
     </div>
   );

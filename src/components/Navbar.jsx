@@ -24,8 +24,8 @@ function Navbar() {
     const handleEmailClick = () => {window.location.href = `mailto:${emailAddress}`}
 
   return (
-    <div className={color ? 'fixed w-full h-[70px] flex justify-between items-center px-4 bg-[#1C1C1D] text-[#F8FBFF] font-bold' 
-    : 'fixed w-full h-[70px] flex justify-between items-center px-4 bg-transparent text-[#FFFFFF] font-bold'}>
+    <nav aria-label="Main navigation" className={color ? 'fixed w-full h-[70px] flex justify-between items-center px-4 bg-[#1C1C1D] text-[#F8FBFF] font-bold z-50'
+    : 'fixed w-full h-[70px] flex justify-between items-center px-4 bg-transparent text-[#FFFFFF] font-bold z-50'}>
         <div>
             <img src={Logo} alt='Logo' style={{ width: '100px' }} />
         </div>
@@ -132,7 +132,7 @@ function Navbar() {
             </ul>
         </div>
 
-    </div>
+    </nav>
   )
 }
 

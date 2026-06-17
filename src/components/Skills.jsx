@@ -50,7 +50,7 @@ const categories = [
 
 function Skills() {
   return (
-    <div name='skills' className='w-full py-20 bg-[#1C1C1D] text-[#F8FBFF]'>
+    <section name='skills' aria-label="Technical skills" className='w-full py-20 bg-[#1C1C1D] text-[#F8FBFF]'>
       <div className='max-w-[1000px] mx-auto px-4'>
         <div className='mb-12'>
           <p className='text-4xl font-bold inline border-b-4 border-[#49AF73]'>Skills</p>
@@ -73,7 +73,7 @@ function Skills() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

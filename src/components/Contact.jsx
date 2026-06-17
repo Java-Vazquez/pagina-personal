@@ -76,7 +76,7 @@ function Contact() {
   }, [status]);
 
   return (
-    <div name="contact" className="w-full py-20 bg-[#0a192f] text-[#F8FBFF]">
+    <section name="contact" aria-label="Contact" className="w-full py-20 bg-[#0a192f] text-[#F8FBFF]">
       <div className="max-w-[1000px] mx-auto px-4">
 
         {/* Header */}
@@ -157,7 +157,7 @@ function Contact() {
         </form>
 
       </div>
-    </div>
+    </section>
   );
 }
 
