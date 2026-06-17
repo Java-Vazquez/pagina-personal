@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { FaBriefcase, FaChevronDown, FaChevronUp } from 'react-icons/fa'
+import { useInView } from '../hooks/useInView'
 
 const experiences = [
   {
@@ -131,15 +132,16 @@ function ExperienceCard({ exp, isLast }) {
 }
 
 function Experience() {
+  const [ref, inView] = useInView()
   return (
     <section name='experience' aria-label="Work experience" className='w-full py-20 bg-[#0a192f] text-[#F8FBFF]'>
-      <div className='max-w-[1000px] mx-auto px-4'>
-        <div className='mb-12'>
+      <div ref={ref} className='max-w-[1000px] mx-auto px-4'>
+        <div className={`mb-12 fade-up ${inView ? 'visible' : ''}`}>
           <p className='text-4xl font-bold inline border-b-4 border-[#49AF73]'>Experience</p>
           <p className='py-4 text-[#8892b0]'>My professional journey so far</p>
         </div>
 
-        <div>
+        <div className={`fade-up ${inView ? 'visible' : ''} delay-200`}>
           {experiences.map((exp, i) => (
             <ExperienceCard key={i} exp={exp} isLast={i === experiences.length - 1} />
           ))}

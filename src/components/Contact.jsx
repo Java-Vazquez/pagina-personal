@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaSpinner, FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { useInView } from '../hooks/useInView';
 
 const channels = [
   {
@@ -29,6 +30,7 @@ const channels = [
 ]
 
 function Contact() {
+  const [ref, inView] = useInView()
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [formError, setFormError] = useState({});
   const [isLoading, setIsLoading] = useState(false);
@@ -77,10 +79,10 @@ function Contact() {
 
   return (
     <section name="contact" aria-label="Contact" className="w-full py-20 bg-[#0a192f] text-[#F8FBFF]">
-      <div className="max-w-[1000px] mx-auto px-4">
+      <div ref={ref} className="max-w-[1000px] mx-auto px-4">
 
         {/* Header */}
-        <div className="mb-12">
+        <div className={`mb-12 fade-up ${inView ? 'visible' : ''}`}>
           <p className="text-4xl font-bold inline border-b-4 border-[#49AF73]">Contact</p>
           <p className="py-4 text-[#8892b0]">Have a project in mind or just want to connect? Reach out.</p>
         </div>
@@ -93,7 +95,7 @@ function Contact() {
               href={ch.href}
               target={ch.href.startsWith('mailto') ? '_self' : '_blank'}
               rel="noreferrer"
-              className={`bg-[#112240] rounded-xl p-5 border border-[#1e3a5f] ${ch.color} transition-all duration-300 hover:-translate-y-1 flex items-center gap-4`}
+              className={`bg-[#112240] rounded-xl p-5 border border-[#1e3a5f] ${ch.color} transition-all duration-300 hover:-translate-y-1 flex items-center gap-4 fade-up ${inView ? 'visible' : ''} delay-${(i + 1) * 100}`}
             >
               <span className={ch.iconColor}>{ch.icon}</span>
               <div>
@@ -105,7 +107,7 @@ function Contact() {
         </div>
 
         {/* Form */}
-        <form onSubmit={handleSubmit} className="bg-[#112240] rounded-xl p-8 border border-[#1e3a5f]">
+        <form onSubmit={handleSubmit} className={`bg-[#112240] rounded-xl p-8 border border-[#1e3a5f] fade-up ${inView ? 'visible' : ''} delay-400`}>
           <h3 className="text-lg font-bold text-[#ccd6f6] mb-6">Send a message</h3>
           <div className="grid sm:grid-cols-2 gap-4 mb-4">
             <div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useInView } from '../hooks/useInView';
 import { FaGithub, FaExternalLinkAlt, FaLock, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import wazuh from '../assets/ciber.jpg'
 import calcu from '../assets/calculadora.jpg'
@@ -106,19 +107,24 @@ function FeaturedCard({ project }) {
 
 function Work() {
   const [archiveOpen, setArchiveOpen] = useState(false)
+  const [ref, inView] = useInView()
 
   return (
     <section name='work' aria-label="Projects" className='w-full py-20 text-[#F8FBFF] bg-[#1C1C1D]'>
-      <div className='max-w-[1000px] mx-auto px-4'>
+      <div ref={ref} className='max-w-[1000px] mx-auto px-4'>
 
         {/* Featured */}
         <div className='mb-16'>
-          <div className='mb-8'>
+          <div className={`mb-8 fade-up ${inView ? 'visible' : ''}`}>
             <p className='text-4xl font-bold inline border-b-4 border-[#49AF73]'>Projects</p>
             <p className='py-4 text-[#8892b0]'>Featured work — professional and open source</p>
           </div>
           <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-6'>
-            {featured.map((p, i) => <FeaturedCard key={i} project={p} />)}
+            {featured.map((p, i) => (
+              <div key={i} className={`fade-up ${inView ? 'visible' : ''} delay-${(i % 4 + 1) * 100}`}>
+                <FeaturedCard project={p} />
+              </div>
+            ))}
           </div>
         </div>
 

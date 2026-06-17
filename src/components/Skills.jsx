@@ -2,6 +2,7 @@ import React from 'react'
 import { SiOkta, SiGooglecloud, SiPython, SiJavascript, SiReact, SiMysql, SiZapier, SiOpenai } from 'react-icons/si'
 import { FaGoogle, FaShieldAlt, FaRobot, FaCode } from 'react-icons/fa'
 import { MdSecurity } from 'react-icons/md'
+import { useInView } from '../hooks/useInView'
 
 const categories = [
   {
@@ -49,17 +50,18 @@ const categories = [
 ]
 
 function Skills() {
+  const [ref, inView] = useInView()
   return (
     <section name='skills' aria-label="Technical skills" className='w-full py-20 bg-[#1C1C1D] text-[#F8FBFF]'>
-      <div className='max-w-[1000px] mx-auto px-4'>
-        <div className='mb-12'>
+      <div ref={ref} className='max-w-[1000px] mx-auto px-4'>
+        <div className={`mb-12 fade-up ${inView ? 'visible' : ''}`}>
           <p className='text-4xl font-bold inline border-b-4 border-[#49AF73]'>Skills</p>
           <p className='py-4 text-[#8892b0]'>Technologies and tools I work with across different domains</p>
         </div>
 
         <div className='grid sm:grid-cols-2 gap-8'>
           {categories.map((cat, i) => (
-            <div key={i} className={`bg-[#0a192f] rounded-xl p-6 border-t-4 ${cat.color} hover:shadow-lg hover:shadow-[#49AF73]/10 transition-all duration-300`}>
+            <div key={i} className={`bg-[#0a192f] rounded-xl p-6 border-t-4 ${cat.color} hover:shadow-lg hover:shadow-[#49AF73]/10 transition-all duration-300 fade-up ${inView ? 'visible' : ''} delay-${(i + 1) * 100}`}>
               <h3 className={`text-lg font-bold mb-5 ${cat.titleColor}`}>{cat.title}</h3>
               <div className='grid grid-cols-2 gap-3'>
                 {cat.skills.map((skill, j) => (
