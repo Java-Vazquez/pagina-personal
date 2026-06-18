@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaSpinner, FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { useInView } from '../hooks/useInView';
+import confetti from 'canvas-confetti';
 
 const channels = [
   {
@@ -60,6 +61,12 @@ function Contact() {
       if (response.ok) {
         setFormData({ name: '', email: '', message: '' });
         setStatus('success');
+        confetti({
+          particleCount: 180,
+          spread: 90,
+          origin: { y: 0.7 },
+          colors: ['#49AF73', '#3d9862', '#F8FBFF', '#a8edca'],
+        });
       } else {
         setStatus('error');
       }
